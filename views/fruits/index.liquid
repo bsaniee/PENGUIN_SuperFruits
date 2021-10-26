@@ -1,7 +1,8 @@
 {% layout "layout.liquid" %} {% block content %}
 <div>
     <a href="/fruits/new"><button>Create A New Fruit</button></a>
-  {% for fruit in fruits %}
+    <a href="/user/logout"><button>Logout</button></a>
+    {% for fruit in fruits %}
   <article>
     <a href="/fruits/{{ fruit._id }}">
       <h2>
@@ -11,6 +12,5 @@
     </a>
   </article>
   {% endfor %}
-  <a href="/"><button>To User Selection</button></a>
 </div>
 {% endblock %}
